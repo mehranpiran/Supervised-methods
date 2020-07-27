@@ -57,3 +57,6 @@ library(randomForest)
 model.RF = randomForest(class ~ . , mat[trainset,])
 predict.RF = predict(model.RF , mat[testset , 1:(ncol(mat)-1)])
 cat("RF accuracy is:" , sum(predict.RF == mat[testset,"class"]) / length(testset))
+
+                 
+                 
